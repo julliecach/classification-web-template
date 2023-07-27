@@ -15,20 +15,17 @@
  * =============================================================================
  */
 const CLASSES_NAMES = {
-  0: 'apple',
-  1: 'avocado',
-  2: 'banana',
-  3: 'carrot',
-  4: 'lettuce',
-  5: 'onion',
-  6: 'pepper',
-  7: 'potato',
-  8: 'tomato',
+  0: 'Severe',
+  1: 'Very Unhealthy',
+  2: 'Unhealthy',
+  3: 'Unhealthy for Sensitive Groups',
+  4: 'Modorate',
+  5: 'Good',
  }
 
 const MOBILENET_MODEL_PATH =
     // tslint:disable-next-line:max-line-length
-    'model_tfjs';
+    'model_tfjs 2';
 
 const IMAGE_SIZE = 128;
 const TOPK_PREDICTIONS = 3;
@@ -38,7 +35,7 @@ const mobilenetDemo = async () => {
   status('Loading model...');
 
   // mobilenet = await tf.loadGraphModel(MOBILENET_MODEL_PATH, {fromTFHub: true});
-  mobilenet = await tf.loadLayersModel('model_tfjs/model.json');
+  mobilenet = await tf.loadLayersModel('model_tfjs 2/model.json');
 
   // Warmup the model. This isn't necessary, but makes the first prediction
   // faster. Call `dispose` to release the WebGL memory allocated for the return
