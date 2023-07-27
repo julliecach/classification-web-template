@@ -15,12 +15,12 @@
  * =============================================================================
  */
 const CLASSES_NAMES = {
-  0: 'Severe',
-  1: 'Very Unhealthy',
-  2: 'Unhealthy',
-  3: 'Unhealthy for Sensitive Groups',
-  4: 'Moderate',
-  5: 'Good',
+  0: 'a_Good',
+  1: 'b_Moderate',
+  2: 'c_Unhealthy_for_Sensitive_Groups',
+  3: 'd_Unhealthy',
+  4: 'e_Very_Unhealthy',
+  5: 'f_Severe',
  }
 
 const MOBILENET_MODEL_PATH =
