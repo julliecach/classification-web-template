@@ -19,7 +19,7 @@ const CLASSES_NAMES = {
   1: 'Very Unhealthy',
   2: 'Unhealthy',
   3: 'Unhealthy for Sensitive Groups',
-  4: 'Modorate',
+  4: 'Moderate',
   5: 'Good',
  }
 
