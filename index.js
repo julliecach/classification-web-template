@@ -89,7 +89,7 @@ async function predict(imgElement) {
     status('Psdding through model....');
     return mobilenet.predict(batched);
   });
-
+  status('Predicting...');
   // Convert logits to probabilities and class names.
   const classes = await getTopKClasses(logits, TOPK_PREDICTIONS);
   const totalTime1 = performance.now() - startTime1;
